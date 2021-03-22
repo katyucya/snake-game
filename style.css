@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+}
+#snake {
+  height: 95vh;
+  width: 95;
+  border: 10px double green;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /*alinha horizontal no meio*/
+  align-items: center; /*alinha verticalmente no meio*/
+  flex-direction: column;
+  color: rgba(66, 70, 66, 0.3);
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Left and right column */
+.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  align-items: center;
+}
+
+/* Middle column */
+.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the header */
+.side h1 {
+  color: green;
+  padding-left: 15px;
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.664);
+}
+
+.side img {
+  height: 25rem;
+}
